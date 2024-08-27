@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHALLENGE DECODIFICADOR DE TEXTO</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/imagem_joia.jpg">
+</head>
+<body>
+
+    <header class="logo__alura">
+        <img src="img/logo alura.png" alt="Logo da Alura">
+    </header>
+
+    <main>
+        <section class="section">
+
+            <div class="left-section">
+                <textarea class="texto_codificar" placeholder="Digite seu texto"></textarea>
+                
+                <div class="botoes">
+                    <button class="botao_encriptar" onclick="botao_encriptar()">CRIPTOGRAFAR</button>
+                    <button class="botao_desencriptar" onclick="botao_desencriptar()">DESCRIPTOGRAFAR</button>
+                </div>
+            </div>
+            
+            <div class="right-section">
+                <img src="img/boneco.png" alt="Pessoa com a lupa">
+                <textarea class="mensagem" placeholder="Nenhum texto apresentado"></textarea>
+
+                <div>
+                    <button class="botao_copiar" onclick="copiarTexto()">COPIAR</button>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <div class="bloco2">
+            <p>CHALLENGE DECODIFICADOR DE TEXTO</p>
+        </div>
+    </footer>
+
+    <script src="decodificador.js"></script>
+</body>
+</html>

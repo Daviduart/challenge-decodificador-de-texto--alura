@@ -1,0 +1,234 @@
+* {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+}
+
+.logo__alura {
+    padding: 1%;
+    margin: 0 auto;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+section{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.left-section, .right-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 45%;
+    border: 2px solid aqua;
+    border-radius: 20px;
+}
+
+.texto_codificar, .mensagem {
+    color: black;
+    width: 90%;
+    border-color: black;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-weight: 300;
+    font-size: 25px;
+    padding: 20px;
+    margin-bottom: 22vh;
+    margin-top: 20px;
+}
+
+.botoes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.copiar {
+    display: flex;
+    justify-content: center;
+    margin-top: 0px;
+}
+
+.botao_encriptar {
+    background-color: antiquewhite;
+    color: black;
+    border: 2px solid black;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 7px;
+    margin-top: 5%;
+}
+
+.botao_encriptar:hover{
+    padding: 12px;
+    color: white;
+    background-color: black;
+}
+
+.botao_desencriptar{
+    background-color: antiquewhite;
+    color: black;
+    border: 2px solid black;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 7px;
+    margin-top: 5%;
+}
+
+.botao_desencriptar:hover{
+    padding: 12px;
+    color: white;
+    background-color: black;
+}
+
+.botao_copiar{
+    background-color: antiquewhite;
+    color: black;
+    border: 2px solid black;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 7px;
+    margin-top: 5%;
+    justify-content: space-between;
+}
+
+.botao_copiar:hover{
+    padding: 12px;
+    color: white;
+    background-color: black;
+}
+
+.rodape {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+    margin: 0;
+    flex-direction: column;
+    padding: 1%;
+}
+
+.bloco1, .bloco2{
+    flex: 1;
+    text-align: center;
+    background-color: black;
+    padding: 12px;
+    
+}
+
+.bloco2 {
+    text-align: right;
+    padding-right: 20px;
+    text-align: center;
+    padding: 2.5%;
+}
+
+.rodape {
+    height: 100%;
+}
+
+/* Responsividade da aplicação */
+@media screen and (max-width: 1000px) {
+
+    .section {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .left-section, .right-section {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+}
+
+@media screen and (max-width: 650px) {
+    header img {
+        width: 20%;
+    }
+
+    .mensagem {
+        font-size: 16px;
+        background-size: contain; 
+        padding: 15px;
+    }
+
+    .texto_decodificar, .mensagem {
+        font-size: 18px;
+        padding: 8px;
+    }
+
+    .botao_encriptar, .botao_desencriptar, .botao_copiar {
+        padding: 8px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header img {
+        width: 20%;
+    }
+
+    .mensagem {
+        font-size: 16px;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .mensagem {
+        font-size: 14px;
+        padding: 10px;
+        margin-top: 25px;
+    }
+
+    .texto_decodificar, .mensagem {
+        font-size: 16px;
+    }
+
+    .botao_encriptar, .botao_desencriptar, .botao_copiar {
+        padding: 6px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 600px) {
+    .text-block {
+        height: 100px;
+        background-size: contain;
+    }
+    
+    .text-block img {
+        width: 100%; 
+        height: auto;
+    }
+}
+
+@media (max-width: 600px) {
+    .rodape {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    .bloco1, .bloco2, .bloco3 {
+        padding: 10px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+}
